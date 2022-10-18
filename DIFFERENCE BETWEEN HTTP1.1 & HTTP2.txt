@@ -1,0 +1,49 @@
+                                       DIFFERENCE BETWEEN HTTP1.1 & HTTP2 
+  
+HTTP stands for hypertext transfer protocol & it is used in client-server communication on the World Wide Web.
+By using HTTP user sends the request to the server & the server sends he response to the user.
+ There are several stages of development of HTTP but we will focus mainly on HTTP/1.1
+It's created in 1997 & HTTP/2 was created in 2015.
+
+
+HTTP1.1-
+            Developed by Timothy Berners-Lee in 1989 as a communication standard for the World Wide Web.
+            HTTP is a top-level application protocol that exchanges information between a client computer and a local or remote web server.
+            In this process, a client sends a text-based request to a server by calling a method like GET or POST. 
+            In response, the server sends a resource like an HTML page back to the client.
+            HTTP have been few revisions to the protocol. But in 2015, a reimagined version called HTTP/2 came into use. 
+ web developers can benefit from understanding the technical differences 
+between HTTP/1.1 and HTTP/2, allowing them to make informed and efficient decisions about evolving best practices.
+
+
+HTTP2- 
+
+          HTTP/2 was developed over the SPDY protocol. 
+         HTTP/2 works on the binary framing layer .extual that converts all the messages in binary format. 
+         It works on fully multiplexed that is one TCP connection is used for multiple requests. HTTP/2 uses HPACK which is used to split data from header.
+         It compresses the header.The server sends all the other files like CSS & JS without the request of the client using the PUSH frame.
+         several methods to decrease latency, especially when dealing with mobile platforms and server-intensive graphics and videos. 
+         HTTP/2 has  increasingly popular, with some estimates suggesting that around a third of all websites in the world support it. 
+         
+        
+
+               
+
+
+
+                                                                       HTTP1.1                                                         HTTP2
+
+                                                               
+                                                   1.The usest works on the textual format.	                 It works on the binary protocol.
+                                                        
+
+                                                  2.There is head of line blocking that blocks               It allows multiplexing so one TCP connection is required for multiple requests.
+                                                    all the requests behind it until it 
+                                                    doesn’t get its all resources.	
+                                                       
+
+                                                3.It uses requests resource Inlining for use                 It uses PUSH frame by server that collects all multiple pages
+                                                   getting multiple pages	 
+                                                               
+
+                                               4. It compresses data by itself.	                       It uses HPACK for data compression.
